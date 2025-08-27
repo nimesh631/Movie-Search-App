@@ -78,7 +78,7 @@ function App() {
       {error && <p className="text-center text-red-800 text-xl mt-4">{error}</p>}
 
       {/* Movie Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+      <div className="grid grid-cols-2  md:grid-cols-5 gap-4 mt-4">
         {movies.map((movie, index) => (
           <MovieCard key={`${movie.imdbID}-${index}`} movie={movie} />
         ))}
